@@ -2,9 +2,9 @@ import fastify, { FastifyPluginAsync } from "fastify";
 import { AppDataSource } from "../config/db";
 import { SignInConfig } from "../entities/SignInConfig";
 import { SignInRecord } from "../entities/SignInRecord";
-import { PointsAccount } from '../entities/PointsAccount';
-import { PointsTransaction } from '../entities/PointsTransaction';
-import { UserCoupon } from '../entities/UserCoupon';
+import { PointsAccount } from '../entities/PointsAccount.js';
+import { PointsTransaction } from '../entities/PointsTransaction.js';
+import { UserCoupon } from '../entities/UserCoupon.js';
 import { authHook } from "../middleware/auth.hook";
 
 export const signinRoutes: FastifyPluginAsync = async (fastify) => {

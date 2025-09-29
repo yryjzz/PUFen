@@ -1,13 +1,13 @@
 import { FastifyPluginAsync } from 'fastify';
-import { AppDataSource } from '../config/db';
-import { User } from '../entities/User';
-import { PointsAccount } from '../entities/PointsAccount';
-import { hashPassword } from '../utils/password';
-import { signToken } from '../utils/jwt';
-import { loginBodyDto, registerBodyDto } from '../dto/auth.dto';
-import { authHook } from '../middleware/auth.hook';
+import { AppDataSource } from '../config/db.js';
+import { User } from '../entities/User.js';
+import { PointsAccount } from '../entities/PointsAccount.js';
+import { hashPassword } from '../utils/password.js';
+import { signToken } from '../utils/jwt.js';
+import { loginBodyDto, registerBodyDto } from '../dto/auth.dto.js';
+import { authHook } from '../middleware/auth.hook.js';
 import bcrypt from 'bcrypt';
-import { rebuildRewardItem } from '../services/reward-list.service';
+import { rebuildRewardItem } from '../services/reward-list.service.js';
 
 export const authRoutes: FastifyPluginAsync = async (fastify) => {
   // fastify.addHook('preHandler', authHook);

@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 import 'reflect-metadata';
-import { AppDataSource } from '../config/db';
-import { User } from '../entities/User';
+import { AppDataSource } from '../config/db.js';
+import { User } from '../entities/User.js';
 import { Not, In } from 'typeorm';
 
 const cmd = process.argv[2];

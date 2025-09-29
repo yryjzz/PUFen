@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from 'fastify';
 import jwt from 'jsonwebtoken';
-import { AppDataSource } from '../config/db';
-import { User } from '../entities/User';
+import { AppDataSource } from '../config/db.js';
+import { User } from '../entities/User.js';
 
 export async function authHook(request: FastifyRequest, reply: FastifyReply): Promise<void> {
 

@@ -1,11 +1,11 @@
 import fastify from 'fastify';
-import { authRoutes } from './controllers/auth.controller';
-import { pointsRoutes } from './controllers/points.controller';
-import { signinRoutes } from './controllers/signin.controller';
-import { recordsRoutes } from './controllers/records.controller';
-import { rewardRoutes } from './controllers/reward.controller';
-import { teamRoutes } from './controllers/team.controller';
-import { couponRoutes } from './controllers/coupon.controller';
+import { authRoutes } from './controllers/auth.controller.js';
+import { pointsRoutes } from './controllers/points.controller.js';
+import { signinRoutes } from './controllers/signin.controller.js';
+import { recordsRoutes } from './controllers/records.controller.js';
+import { rewardRoutes } from './controllers/reward.controller.js';
+import { teamRoutes } from './controllers/team.controller.js';
+import { couponRoutes } from './controllers/coupon.controller.js';
 const app = fastify({ logger: true });
 
 app.get('/health', async (_, reply) => {

@@ -1,7 +1,7 @@
 import { FastifyPluginAsync } from 'fastify';
-import { AppDataSource } from '../config/db';
-import { UserCoupon } from '../entities/UserCoupon';
-import { authHook } from '../middleware/auth.hook';
+import { AppDataSource } from '../config/db.js';
+import { UserCoupon } from '../entities/UserCoupon.js';
+import { authHook } from '../middleware/auth.hook.js';
 
 export const couponRoutes: FastifyPluginAsync = async (fastify) => {
   // 获取用户拥有的所有券

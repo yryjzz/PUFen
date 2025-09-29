@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { ManyToOne, JoinColumn } from 'typeorm';
-import { RewardItem } from './RewardItem';
+import { RewardItem } from './RewardItem.js';
 
 @Entity()
 export class RewardRecord {

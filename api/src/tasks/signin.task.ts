@@ -1,8 +1,8 @@
 import cron from 'node-cron';
-import { buildWeekConfig } from '../services/signin-config.service';
-import { rebuildRewardItem } from '../services/reward-list.service';
-import { AppDataSource } from '../config/db';
-import { User } from '../entities/User';
+import { buildWeekConfig } from '../services/signin-config.service.js';
+import { rebuildRewardItem } from '../services/reward-list.service.js';
+import { AppDataSource } from '../config/db.js';
+import { User } from '../entities/User.js';
 
 export function startResetConfigTask(): void {
   cron.schedule(

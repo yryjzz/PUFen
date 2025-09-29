@@ -1,15 +1,15 @@
 import { DataSource } from 'typeorm';
-import { User } from '../entities/User';
-import { PointsAccount } from '../entities/PointsAccount';
-import { SignInConfig } from '../entities/SignInConfig';
-import { SignInRecord } from '../entities/SignInRecord';
-import { Team } from '../entities/Team';
-import { TeamMember } from '../entities/TeamMember';
-import { TeamRecord } from '../entities/TeamRecord';
-import { RewardItem } from '../entities/RewardItem';
-import { RewardRecord } from '../entities/RewardRecord';
-import { PointsTransaction } from '../entities/PointsTransaction';
-import { UserCoupon } from '../entities/UserCoupon';
+import { User } from '../entities/User.js';
+import { PointsAccount } from '../entities/PointsAccount.js';
+import { SignInConfig } from '../entities/SignInConfig.js';
+import { SignInRecord } from '../entities/SignInRecord.js';
+import { Team } from '../entities/Team.js';
+import { TeamMember } from '../entities/TeamMember.js';
+import { TeamRecord } from '../entities/TeamRecord.js';
+import { RewardItem } from '../entities/RewardItem.js';
+import { RewardRecord } from '../entities/RewardRecord.js';
+import { PointsTransaction } from '../entities/PointsTransaction.js';
+import { UserCoupon } from '../entities/UserCoupon.js';
 
 export const AppDataSource = new DataSource({
     type: 'sqlite',
