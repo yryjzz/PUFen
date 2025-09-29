@@ -8,6 +8,7 @@ COPY src ./src
 RUN npm ci --omit=dev
 RUN npm run build
 
+COPY dist ./dist
 COPY . .
 
 EXPOSE 3001
