@@ -26,7 +26,7 @@ export const authService = {
   // 登出
   logout() {
     localStorage.removeItem('token');
-    window.location.href = '/login';
+    // 不再直接跳转，让调用者处理路由
   },
 
   // 获取token

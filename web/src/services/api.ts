@@ -32,7 +32,11 @@ class ApiClient {
         return response.data;
       },
       (error) => {
-        if (error.response?.status === 401) {
+        // 只有在获取用户信息或需要认证的接口返回401时才自动跳转
+        // 登录接口的401应该让前端组件处理显示错误信息
+        if (error.response?.status === 401 && 
+            !error.config?.url?.includes('/auth/login') &&
+            !error.config?.url?.includes('/auth/register')) {
           // 未授权，清除token并跳转到登录页
           localStorage.removeItem('token');
           window.location.href = '/login';
