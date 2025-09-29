@@ -1,0 +1,28 @@
+{
+  "name": "PU分积分签到系统",
+  "short_name": "PU分",
+  "description": "每日签到赚积分，兑换优惠券，邀请好友瓜分奖励",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4CAF50",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "lifestyle"],
+  "lang": "zh-CN",
+  "scope": "/",
+  "prefer_related_applications": false
+}

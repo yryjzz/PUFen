@@ -1,0 +1,44 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:prod": "mkdir -p /var/data && node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "run:ts": "tsx",
+    "start": "node dist/server.js",
+    "coupon:add": "tsx src/scripts/coupon-cli.ts add",
+    "coupon:list": "tsx src/scripts/coupon-cli.ts list",
+    "coupon:clear": "tsx src/scripts/coupon-cli.ts clear"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^4.2.1",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/date-fns": "^2.5.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.5.2",
+    "@types/node-cron": "^3.0.11",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

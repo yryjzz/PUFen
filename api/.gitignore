@@ -1,0 +1,49 @@
+########## Dependencies ##########
+node_modules/
+.pnpm-store/
+
+########## Build output ##########
+dist/
+build/
+*.tsbuildinfo
+
+########## Environment ##########
+.env
+.env.*local
+!.env.example
+
+########## Logs ##########
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+########## Runtime ##########
+.pid
+.seed
+*.pid.lock
+.libs/
+
+########## Coverage ##########
+coverage/
+.nyc_output/
+
+########## IDE ##########
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+########## OS ##########
+.DS_Store
+Thumbs.db
+
+########## Temporary ##########
+tmp/
+temp/
+.cache/
