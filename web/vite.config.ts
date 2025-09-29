@@ -46,7 +46,7 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom', 'antd'],
   },
-  // H5特性配置
-  base: './',
+  // SPA 配置
+  base: '/',
   publicDir: 'public',
 })
