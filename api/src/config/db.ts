@@ -14,7 +14,7 @@ import { UserCoupon } from '../entities/UserCoupon';
 export const AppDataSource = new DataSource({
     type: 'sqlite',
     database: process.env.NODE_ENV === 'production' 
-        ? '/var/data/pufen.db'      // Render 持久目录
+        ? '/app/pufen.db'      // Render 持久目录
         : 'src/database/dev.db',    // 本地照旧
     synchronize: true,            // 上线前需关闭
     logging: false,
