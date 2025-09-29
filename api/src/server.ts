@@ -1,9 +1,9 @@
 import 'reflect-metadata';
-import app from './app';
-import { startResetConfigTask } from './tasks/signin.task';
-import { AppDataSource } from './config/db';
-import { buildWeekConfig } from './services/signin-config.service';
-import { CouponExpiryTask } from './tasks/coupon-expiry.task';
+import app from './app.js';
+import { startResetConfigTask } from './tasks/signin.task.js';
+import { AppDataSource } from './config/db.js';
+import { buildWeekConfig } from './services/signin-config.service.js';
+import { CouponExpiryTask } from './tasks/coupon-expiry.task.js';
 import dotenv from 'dotenv';
 import { mkdir } from 'fs/promises';
 
