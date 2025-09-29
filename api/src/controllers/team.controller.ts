@@ -1,13 +1,13 @@
 // team.controller.ts
 import { FastifyPluginAsync } from "fastify";
-import { authHook } from "../middleware/auth.hook";
-import { AppDataSource } from "../config/db";
-import { Team } from "../entities/Team";
-import { TeamMember } from "../entities/TeamMember";
-import { TeamRecord } from "../entities/TeamRecord";
-import { User } from "../entities/User";
-import { PointsAccount } from "../entities/PointsAccount";
-import { PointsTransaction } from "../entities/PointsTransaction";
+import { authHook } from "../middleware/auth.hook.js";
+import { AppDataSource } from "../config/db.js";
+import { Team } from "../entities/Team.js";
+import { TeamMember } from "../entities/TeamMember.js";
+import { TeamRecord } from "../entities/TeamRecord.js";
+import { User } from "../entities/User.js";
+import { PointsAccount } from "../entities/PointsAccount.js";
+import { PointsTransaction } from "../entities/PointsTransaction.js";
 
 export const teamRoutes: FastifyPluginAsync = async (fastify) => {
   fastify.addHook('preHandler', authHook);

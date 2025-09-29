@@ -1,7 +1,7 @@
 import { FastifyPluginAsync } from "fastify";
-import { AppDataSource } from "../config/db";
-import { PointsAccount } from "../entities/PointsAccount";
-import { authHook } from "../middleware/auth.hook";
+import { AppDataSource } from "../config/db.js";
+import { PointsAccount } from "../entities/PointsAccount.js";
+import { authHook } from "../middleware/auth.hook.js";
 
 export const pointsRoutes: FastifyPluginAsync = async (fastify) => {
     fastify.addHook('preHandler', authHook);

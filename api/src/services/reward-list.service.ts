@@ -1,5 +1,5 @@
-import { AppDataSource } from "../config/db";
-import { RewardItem } from "../entities/RewardItem";
+import { AppDataSource } from "../config/db.js";
+import { RewardItem } from "../entities/RewardItem.js";
 
 const WEEK_COUPONS = [
   { name: '满29减4',  desc: '满29元减4元，有效期7天', points: 5,  couponType: '满减券', couponValue: 4,  condition: 29, stock: 1, stage: 1 as const },

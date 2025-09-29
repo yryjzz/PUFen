@@ -1,12 +1,12 @@
 import { FastifyPluginAsync } from "fastify";
-import { authHook } from "../middleware/auth.hook";
-import { AppDataSource } from "../config/db";
-import { RewardItem } from "../entities/RewardItem";
-import { PointsAccount } from "../entities/PointsAccount";
-import { PointsTransaction } from "../entities/PointsTransaction";
-import { RewardRecord } from "../entities/RewardRecord";
-import { UserCoupon } from "../entities/UserCoupon";
-import { RewardStageService } from "../services/reward-stage.service";
+import { authHook } from "../middleware/auth.hook.js";
+import { AppDataSource } from "../config/db.js";
+import { RewardItem } from "../entities/RewardItem.js";
+import { PointsAccount } from "../entities/PointsAccount.js";
+import { PointsTransaction } from "../entities/PointsTransaction.js";
+import { RewardRecord } from "../entities/RewardRecord.js";
+import { UserCoupon } from "../entities/UserCoupon.js";
+import { RewardStageService } from "../services/reward-stage.service.js";
 
 export const rewardRoutes: FastifyPluginAsync = async (fastify) => {
     fastify.get(
